@@ -1,0 +1,50 @@
+// Framework
+// Generic / site wide non specific styles
+
+
+// CSS reset 
+body {
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+a {
+	color: black;
+}
+a:hover, a:focus,
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+// End reset  
+
+// Custom Framework Styles 
+
+.site_container {
+	width: 100%;
+	position: relative;
+}
+.site_container section {
+	
+}
+
+
+// Tablet Styles
+@include respond-to(tablet) {
+	.site_container {
+		background: red;
+	}
+}
+
+// Mobile Styles
+@include respond-to(mobile) {
+	.site_container {
+		background: blue;
+	}
+}
